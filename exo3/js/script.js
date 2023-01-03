@@ -6,17 +6,17 @@ divIdNavBar.setAttribute('id' , 'socialNetworkNavigation')
 const newLi = document.createElement('li');
 
 // créer un nouveau nœud de texte avec "Déconnexion" comme texte spécifié
-const newTextNode = document.createTextNode('Déconnexion');
+const nouveauTextNode = document.createTextNode('Déconnexion');
 
 // ajouter le nœud de texte au nœud de liste nouvellement créé
-newLi.appendChild(newTextNode);
+newLi.appendChild(nouveauTextNode);
 
 // ajouter ce nœud de liste mis à jour à la liste non ordonnée
-const ul = document.querySelector('ul');
-ul.appendChild(newLi);
+const currentUl = document.querySelector('ul');
+currentUl.appendChild(newLi);
 
 // prime : afficher le texte des premier et dernier éléments li de la liste
-const firstLi = ul.firstElementChild;
-const lastLi = ul.lastElementChild;
-console.log(firstLi.textContent); // affiche "Profile"
-console.log(lastLi.textContent); // affiche "Déconnexion"
+const premierLi = currentUl.firstElementChild;
+const dernierLi = currentUl.lastElementChild;
+console.log(premierLi.textContent); // affiche "Profile"
+console.log(dernierLi.textContent); // affiche "Déconnexion"
